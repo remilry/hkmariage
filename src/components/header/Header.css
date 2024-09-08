@@ -1,0 +1,16 @@
+section {
+    display: flex;
+    padding: 4px;
+    gap: 16px;
+  
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-size: 32px;
+}
+
+a:hover {
+    color: gold;
+}
