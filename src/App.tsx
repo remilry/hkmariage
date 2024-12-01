@@ -1,11 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Header } from "./components/header/Header";
+import "./fonts/GreatVibes.ttf";
+import { Home } from "./modules/Home";
+import { HostingPage } from "./modules/hosting/HostingPage";
+import { Layout } from "./Layout";
 
 function App() {
   return (
-    <>
-      <Header />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<div />} />
+        <Route path="logements" element={<HostingPage />} />
+      </Route>
+    </Routes>
   );
 }
 

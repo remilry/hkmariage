@@ -1,0 +1,51 @@
+#container {
+    padding-inline : 14vw;
+}
+
+#slice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 48px; */
+   background-color:RGBA(137, 156, 134,0.7);
+   border-radius: 16px;
+}
+
+#textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#textInsideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 80px;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+    height: 400px;
+    fill-rule: evenodd;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#imgLeft {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#imgRight {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
