@@ -56,7 +56,7 @@ const SliderContainer = styled(motion.div)`
   position: absolute;
   right: 0;
   width: 200px;
-  background-color: RGB(137, 156, 134);
+  background-color: var(--color-green);
   flex-direction: column;
   gap: 16px;
   box-sizing: border-box;

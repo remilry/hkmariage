@@ -49,7 +49,7 @@ const CounterContainer = styled.div`
 const CounterItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: RGB(222, 203, 173);
+  background-color: var(--color-gold);
   width: 200px;
   padding: 12px;
   align-items: center;

@@ -1,12 +1,12 @@
+@use "shared/styles/theme";
+
 :root {
   font-family: "GreatVibes", sans-serif;
   line-height: 1.5;
 
-  color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-  color: RGB(137, 156, 134);
-  background-color: #242424;
 
+  color: var(--color-green);
+  background-color: var(--color-white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,8 +23,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: RGB(137, 156, 134); */
-  background-color: "RGB(255, 245, 237)"
+
 }
 
 h1 {
@@ -68,21 +67,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: RGB(255, 245, 237);
-  }
-  button {
-    background-color:  "RGB(255, 245, 237)";
-  }
-}
+

@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     /* gap: 48px; */
-   background-color:RGBA(137, 156, 134,1);
+   background-color:var(--color-green);
    border-radius: 16px;
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
 
     h2,li,p {
-        color: RGB(255, 245, 237);
+        color: var(--color-white);
     } 
    
 }

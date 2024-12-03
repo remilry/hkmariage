@@ -3,8 +3,7 @@
   flex: 1;
   padding-top: 24px;
   padding: 8px 32px;
-  background-color: RGB(137, 156, 134);
-  /* background-color: RGB(255, 245, 237); */
+  background-color: var(--color-green);
   align-items: center;
   height: 70px;
   z-index: 2;
@@ -14,12 +13,12 @@
 
 a {
   text-decoration: none;
-  color:RGB(255, 245, 237);
+  color: var(--color-white);
   font-size: 32px;
 }
 
 a:hover {
-  color: RGB(222, 203, 173);
+  color: var(--color-gold);
 }
 
 #links {
@@ -55,7 +54,7 @@ a:hover {
 
   #hk-text {
     display: inline;
-    color: RGB(255, 245, 237);
+    color: var(--color-white);
     font-size: 32px;
   }
 }
