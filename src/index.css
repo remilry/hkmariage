@@ -24,7 +24,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   /* background-color: RGB(137, 156, 134); */
-  background-color:  "#C1C1C1";
+  background-color: "RGB(255, 245, 237)"
 }
 
 h1 {
@@ -80,9 +80,9 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: RGB(255, 245, 237);
   }
   button {
-    background-color: #f9f9f9;
+    background-color:  "RGB(255, 245, 237)";
   }
 }

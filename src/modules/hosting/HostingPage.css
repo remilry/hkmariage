@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     /* gap: 48px; */
-   background-color:RGBA(137, 156, 134,0.7);
+   background-color:RGBA(137, 156, 134,1);
    border-radius: 16px;
 }
 
@@ -17,6 +17,10 @@
     width: 50%;
     justify-content: center;
     align-items: center;
+
+    h2,li,p {
+        color: RGB(255, 245, 237);
+    } 
    
 }
 
