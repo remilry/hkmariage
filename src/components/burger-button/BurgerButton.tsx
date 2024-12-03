@@ -1,4 +1,4 @@
-import "./BurgerButton.css";
+import "./BurgerButton.scss";
 
 type Props = {
   isOpen: boolean;

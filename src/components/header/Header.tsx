@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
+import "./Header.scss";
 import { BurgerButton } from "../burger-button/BurgerButton";
 import { useState } from "react";
 import styled from "@emotion/styled";

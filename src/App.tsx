@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import "./fonts/GreatVibes.ttf";
 import { Home } from "./modules/Home";
 import { HostingPage } from "./modules/hosting/HostingPage";

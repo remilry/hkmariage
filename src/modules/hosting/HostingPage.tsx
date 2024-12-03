@@ -1,4 +1,4 @@
-import "./HostingPage.css";
+import "./HostingPage.scss";
 import BulleImg from "../../assets/bulle.webp";
 import ChambreImg from "../../assets/chambre.webp";
 import FrontDoor from "../../assets/frontDoor.webp";
