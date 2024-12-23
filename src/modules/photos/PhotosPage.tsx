@@ -2,7 +2,7 @@ import styles from "./PhotoPage.module.scss";
 import appleStoreDownloadImage from "../../assets/appleStoreDownload.webp";
 import googlePlayDownloadImage from "../../assets/googlePlayDownload.webp";
 import QRCodeImage from "../../assets/QRCode.webp";
-import WebshootsApp from "../../assets/WebshootsApp.webp";
+import WebshootsApp from "../../assets/webshootsApp.webp";
 
 export const PhotosPage = () => {
   return (
