@@ -1,0 +1,52 @@
+@use '../../shared/styles/media';
+
+.homeBanner {
+    display: flex;
+    position: relative;
+
+   img {
+        width: 100%;
+        // max-height: calc(100vh - 70px);
+      
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 7%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+
+        
+    }
+
+    .overlayContent {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        border-radius: 12px;
+        background-color: RGBA(55, 55, 55,0.4);;
+    }
+    
+    .title {
+        font-size: 3.2em;
+        line-height: 1.1;
+        color: var(--color-white);
+    }
+
+    .rsvp {
+        color: var(--color-black);
+        background-color: var(--color-white);
+        border-width: 1px;
+        border-color: var(--color-black);
+        border-radius: 8px;
+        padding: 16px 40px;
+        font-family: "Fraunces";
+
+    }
+}
+

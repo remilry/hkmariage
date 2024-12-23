@@ -1,0 +1,60 @@
+.container {
+    padding: 48px 0;
+    padding-inline : 14vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contentContainer {
+    min-width: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+}
+
+
+
+.downloadButtonsContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.downloadButton {
+    height: 70px;
+}
+
+.codeContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.QRCode {
+    width: 200px;
+    height: 200px;
+}
+
+.webshootsImage {
+    width: 300px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+p {
+    color: var(--color-black);
+}

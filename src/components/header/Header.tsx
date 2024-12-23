@@ -13,10 +13,10 @@ export const Header = () => {
         <p id="hk-text">Hélène & Kévin</p>
         <div id="links">
           <Link to="/">Acceuil</Link>
-          <Link to="/about">Infos</Link>
+          <Link to="/infos">Infos</Link>
           <Link to="/logements">Logements</Link>
-          <Link to="">Photos</Link>
-          <Link to="">Contacts</Link>
+          <Link to="/photos">Photos</Link>
+          <Link to="/contacts">Contacts</Link>
         </div>
         <div id="burger">
           <BurgerButton
@@ -43,10 +43,10 @@ const Slider = ({ isOpen }: { isOpen: boolean }) => {
       variants={variants}
     >
       <Link to="/">Acceuil</Link>
-      <Link to="/about">Infos</Link>
-      <Link to="">Logements</Link>
-      <Link to="">Photos</Link>
-      <Link to="">Contacts</Link>
+      <Link to="/infos">Infos</Link>
+      <Link to="/logements">Logements</Link>
+      <Link to="/photos">Photos</Link>
+      <Link to="/contacts">Contacts</Link>
     </SliderContainer>
   );
 };

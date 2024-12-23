@@ -7,15 +7,15 @@ import { Divider } from "../../components/divider/Divider";
 
 export const HostingPage = () => {
   return (
-    <div id="container">
-      <h1 id="title">Les logements</h1>
+    <div className="container">
+      <h1 className="title">Les logements</h1>
       {/* <p>
         Plusieurs options sont disponibles pour se loger: bulles, chambres,
         tentes
       </p> */}
-      <div id="slice">
-        <div id="textContainer">
-          <div id="textInsideContainer">
+      <div className="slice imageRight">
+        <div className="textContainer">
+          <div className="textInsideContainer">
             <h2>Les bulles</h2>
             <ul>
               <li>Nombre de bulles : 4</li>
@@ -23,13 +23,13 @@ export const HostingPage = () => {
             </ul>
           </div>
         </div>
-        <img id="imgRight" src={BulleImg} alt="bulle" />
+        <img className="imgRight" src={BulleImg} alt="bulle" />
       </div>
       <Divider />
-      <div id="slice">
-        <img id="imgLeft" src={ChambreImg} alt="chambre" />
-        <div id="textContainer">
-          <div id="textInsideContainer">
+      <div className="slice imageLeft">
+        <img className="imgLeft" src={ChambreImg} alt="chambre" />
+        <div className="textContainer">
+          <div className="textInsideContainer">
             <h2>Les chambres</h2>
             <ul>
               <li>Nombre de chambres : XX</li>
@@ -40,25 +40,25 @@ export const HostingPage = () => {
         </div>
       </div>
       <Divider />
-      <div id="slice">
-        <div id="textContainer">
-          <div id="textInsideContainer">
+      <div className="slice imageRight">
+        <div className="textContainer">
+          <div className="textInsideContainer">
             <h2>Tente et caravanne</h2>
-            <p>
+            <span>
               Un terrain est prévu pour dormir en tente ou en caravanne. Il faut
               cependant ramener le matériel.
-            </p>
+            </span>
           </div>
         </div>
-        <img id="imgRight" src={FrontDoor} alt="chambre" />
+        <img className="imgRight" src={FrontDoor} alt="chambre" />
       </div>
       <Divider />
-      <div id="slice">
-        <img id="imgLeft" src={Cabane} alt="chambre" />
-        <div id="textContainer">
-          <div id="textInsideContainer">
+      <div className="slice imageLeft">
+        <img className="imgLeft" src={Cabane} alt="chambre" />
+        <div className="textContainer">
+          <div className="textInsideContainer">
             <h2>Se loger en dehors</h2>
-            <p>Bah demmerde toi !</p>
+            <span>Bah demmerde toi !</span>
           </div>
         </div>
       </div>

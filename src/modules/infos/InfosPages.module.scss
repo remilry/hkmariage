@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+
+    .title {
+        align-self: center;
+    }
+
+    span {
+        color: var(--color-black);
+        font-family: "Fraunces";
+    }
+
+    h3 {
+        color: var(--color-black);
+        font-family: "Fraunces";
+        margin-block: 0;
+    }
+
+
+    .leftColumn {
+        text-align: end;
+       flex: 1;
+    }
+
+    .rightColumn {
+        flex: 1;
+    }
+}
