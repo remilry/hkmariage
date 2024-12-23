@@ -4,14 +4,15 @@
     padding-inline : 14vw;
     padding-bottom: 48px;
 
-
+    @include media.large {
+        padding-inline: 7vw;
+    }
+    
     @include media.medium {
         padding-inline: 0;
     }
 
-    @include media.large {
-        padding-inline: 7vw;
-    }
+   
 
     .slice {
         display: flex;
