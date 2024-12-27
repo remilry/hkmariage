@@ -56,7 +56,7 @@ const Slider = ({
 }) => {
   const variants = {
     closed: { height: 0, padding: 0 },
-    open: { height: "100%", padding: 8 },
+    open: { height: "100%" },
   };
 
   return (
@@ -88,13 +88,15 @@ const SliderContainer = styled(motion.div)`
   display: flex;
   position: absolute;
   top: 69px;
+  padding-top: 20%;
   right: 0;
   width: 100%;
   background-color: var(--color-green);
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
   overflow: hidden;
+  align-items: center;
 `;
