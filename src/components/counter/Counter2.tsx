@@ -3,7 +3,7 @@ import { calculateTimeRemaining } from "./counter.utils";
 import { useEffect, useState } from "react";
 import { DateTime } from "luxon";
 
-const initialDate = DateTime.fromISO("2024-12-23T14:00:00");
+const initialDate = DateTime.fromISO("2025-07-26T14:00:00");
 
 export const Counter2 = () => {
   const [remainingTime, setRemainingTime] = useState(
