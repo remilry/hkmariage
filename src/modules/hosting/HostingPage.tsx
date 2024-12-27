@@ -3,7 +3,6 @@ import BulleImg from "../../assets/bulle.webp";
 import ChambreImg from "../../assets/chambre.webp";
 import FrontDoor from "../../assets/frontDoor.webp";
 import Cabane from "../../assets/cabane.webp";
-import { Divider } from "../../components/divider/Divider";
 
 export const HostingPage = () => {
   return (
@@ -25,7 +24,7 @@ export const HostingPage = () => {
         </div>
         <img className="imgRight" src={BulleImg} alt="bulle" />
       </div>
-      <Divider />
+      <Spacer />
       <div className="slice imageLeft">
         <img className="imgLeft" src={ChambreImg} alt="chambre" />
         <div className="textContainer">
@@ -39,7 +38,7 @@ export const HostingPage = () => {
           </div>
         </div>
       </div>
-      <Divider />
+      <Spacer />
       <div className="slice imageRight">
         <div className="textContainer">
           <div className="textInsideContainer">
@@ -52,7 +51,7 @@ export const HostingPage = () => {
         </div>
         <img className="imgRight" src={FrontDoor} alt="chambre" />
       </div>
-      <Divider />
+      <Spacer />
       <div className="slice imageLeft">
         <img className="imgLeft" src={Cabane} alt="chambre" />
         <div className="textContainer">
@@ -64,4 +63,8 @@ export const HostingPage = () => {
       </div>
     </div>
   );
+};
+
+export const Spacer = () => {
+  return <div className="spacer" />;
 };
