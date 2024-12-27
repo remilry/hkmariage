@@ -20,6 +20,10 @@ export const Header = () => {
     };
   }, [isSliderOpen]);
 
+  const closeSlider = () => {
+    setIsSliderOpen(false);
+  };
+
   return (
     <>
       <section id="header">
@@ -38,12 +42,18 @@ export const Header = () => {
           />
         </div>
       </section>
-      <Slider isOpen={isSliderOpen} />
+      <Slider isOpen={isSliderOpen} onPressItem={closeSlider} />
     </>
   );
 };
 
-const Slider = ({ isOpen }: { isOpen: boolean }) => {
+const Slider = ({
+  isOpen,
+  onPressItem,
+}: {
+  isOpen: boolean;
+  onPressItem: () => void;
+}) => {
   const variants = {
     closed: { height: 0, padding: 0 },
     open: { height: "100%", padding: 8 },
@@ -55,11 +65,21 @@ const Slider = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       variants={variants}
     >
-      <Link to="/">Acceuil</Link>
-      <Link to="/infos">Infos</Link>
-      <Link to="/logements">Logements</Link>
-      <Link to="/photos">Photos</Link>
-      <Link to="/contacts">Contacts</Link>
+      <Link to="/" onClick={onPressItem}>
+        Acceuil
+      </Link>
+      <Link to="/infos" onClick={onPressItem}>
+        Infos
+      </Link>
+      <Link to="/logements" onClick={onPressItem}>
+        Logements
+      </Link>
+      <Link to="/photos" onClick={onPressItem}>
+        Photos
+      </Link>
+      <Link to="/contacts" onClick={onPressItem}>
+        Contacts
+      </Link>
     </SliderContainer>
   );
 };
