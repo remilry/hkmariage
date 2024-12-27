@@ -17,14 +17,7 @@ export const InfosPage = () => {
           <br />
           <span>12 Pl. du Coudert, 63570 Auzat-la-Combelle</span>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "0 40px",
-          }}
-        >
+        <div className={styles.middleColumn}>
           <Round />
           <Line />
         </div>
@@ -38,14 +31,7 @@ export const InfosPage = () => {
         }}
       >
         <div className={styles.leftColumn}></div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "0 40px",
-          }}
-        >
+        <div className={styles.middleColumn}>
           <Round />
           <Line />
         </div>
@@ -69,14 +55,7 @@ export const InfosPage = () => {
           <br />
           <span>2 Rue du Château, 63340 Collanges</span>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "0 40px",
-          }}
-        >
+        <div className={styles.middleColumn}>
           <Round />
           <Line />
         </div>
@@ -90,14 +69,7 @@ export const InfosPage = () => {
         }}
       >
         <div className={styles.leftColumn}></div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "0 40px",
-          }}
-        >
+        <div className={styles.middleColumn}>
           <Round />
           <Line />
           <Round />
@@ -124,5 +96,6 @@ const Round = styled.div({
 const Line = styled.div({
   backgroundColor: "black",
   width: 2,
-  height: 150,
+  minHeight: 150,
+  height: "100%",
 });
