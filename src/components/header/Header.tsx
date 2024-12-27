@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
 import "./Header.scss";
 import { BurgerButton } from "../burger-button/BurgerButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 export const Header = () => {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
+
+  useEffect(() => {
+    if (isSliderOpen) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-y-hidden");
+    };
+  }, [isSliderOpen]);
+
   return (
     <>
       <section id="header">
@@ -33,7 +46,7 @@ export const Header = () => {
 const Slider = ({ isOpen }: { isOpen: boolean }) => {
   const variants = {
     closed: { height: 0, padding: 0 },
-    open: { height: 320, padding: 8 },
+    open: { height: "100%", padding: 8 },
   };
 
   return (
@@ -63,4 +76,5 @@ const SliderContainer = styled(motion.div)`
   box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
+  overflow: hidden;
 `;
