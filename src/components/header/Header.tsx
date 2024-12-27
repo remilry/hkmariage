@@ -54,11 +54,13 @@ const Slider = ({ isOpen }: { isOpen: boolean }) => {
 const SliderContainer = styled(motion.div)`
   display: flex;
   position: absolute;
+  top: 69px;
   right: 0;
-  width: 200px;
+  width: 100%;
   background-color: var(--color-green);
   flex-direction: column;
   gap: 16px;
   box-sizing: border-box;
   overflow: hidden;
+  z-index: 1;
 `;
