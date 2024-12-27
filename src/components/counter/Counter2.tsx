@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styles from "./Counter2.module.scss";
 import { calculateTimeRemaining } from "./counter.utils";
 import { useEffect, useState } from "react";
 import { DateTime } from "luxon";
@@ -20,51 +20,45 @@ export const Counter2 = () => {
     };
   }, [setRemainingTime]);
   return (
-    <CounterContainer>
+    <div className={styles.counterContainer}>
       <CounterItem count={remainingTime.months} label="mois" />
-      <CounterItemCount>:</CounterItemCount>
+      <div className={styles.counterItemCount}>:</div>
       <CounterItem count={remainingTime.weeks} label="semaines" />
-      <CounterItemCount>:</CounterItemCount>
+      <div className={styles.counterItemCount}>:</div>
       <CounterItem count={remainingTime.days} label="jours" />
-      <CounterItemCount>:</CounterItemCount>
-      <CounterItem count={remainingTime.hours} label="heures" />
-      <CounterItemCount>:</CounterItemCount>
-      <CounterItem count={remainingTime.minutes} label="minutes" />
-    </CounterContainer>
+      <div className={`${styles.counterItemCount} ${styles.desktopOnly}`}>
+        :
+      </div>
+      <CounterItem count={remainingTime.hours} label="heures" isDesktopOnly />
+      <div className={(styles.counterItemCount, styles.desktopOnly)}>:</div>
+      <CounterItem
+        count={remainingTime.minutes}
+        label="minutes"
+        isDesktopOnly
+      />
+    </div>
   );
 };
 
-const CounterItem = ({ count, label }: { count: number; label: string }) => {
+const CounterItem = ({
+  count,
+  label,
+  isDesktopOnly,
+}: {
+  count: number;
+  label: string;
+  isDesktopOnly?: boolean;
+}) => {
   const countLabel = count < 10 ? `0${count}` : count;
 
   return (
-    <CounterItemContainer>
-      <CounterItemCount>{countLabel}</CounterItemCount>
-      <CounterItemLabel>{label}</CounterItemLabel>
-    </CounterItemContainer>
+    <div
+      className={`${styles.counterItemContainer} ${
+        isDesktopOnly ? styles.desktopOnly : ""
+      }`}
+    >
+      <span className={styles.counterItemCount}>{countLabel}</span>
+      <span className={styles.counterItemLabel}>{label}</span>
+    </div>
   );
 };
-
-const CounterContainer = styled.div`
-  gap: 16px;
-  display: flex;
-  flex-direction: row;
-`;
-
-const CounterItemContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const CounterItemCount = styled.span`
-  font-size: 3rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-`;
-
-const CounterItemLabel = styled.span`
-  font-size: 2rem;
-  color: white;
-`;

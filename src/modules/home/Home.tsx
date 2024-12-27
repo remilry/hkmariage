@@ -9,14 +9,23 @@ export const Home = () => {
       <div className={styles.homeBanner}>
         <img className={styles.img} src={homeBanner} />
         <div className={styles.overlay}>
-          <div className={styles.overlayContent}>
-            <span className={styles.title}>Hélène & Kévin</span>
-            <Counter2 />
-            <button className={styles.rsvp}>RSVP</button>
-          </div>
+          <OverlayContent />
         </div>
       </div>
+      <div className={styles.mobileOverlay}>
+        <OverlayContent />
+      </div>
       <InfosPage />
+    </div>
+  );
+};
+
+const OverlayContent = () => {
+  return (
+    <div className={styles.overlayContent}>
+      <span className={styles.title}>Hélène & Kévin</span>
+      <Counter2 />
+      <button className={styles.rsvp}>RSVP</button>
     </div>
   );
 };

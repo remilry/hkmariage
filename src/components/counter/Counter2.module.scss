@@ -1,0 +1,39 @@
+@use '../../shared/styles/media';
+
+.counterContainer {
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.counterItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.counterItemCount {
+    font-size: 3rem;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+
+    @include media.small {
+       color: var(--color-black)
+    }
+}
+
+.counterItemLabel {
+    font-size: 2rem;
+    color: var(--color-white);
+    
+    @include media.small {
+       color: var(--color-black)
+    }
+}
+
+.desktopOnly {
+    @include media.small {
+        display: none;
+    }
+}
