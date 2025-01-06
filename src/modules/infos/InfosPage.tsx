@@ -15,13 +15,13 @@ export const InfosPage = () => {
         side="right"
         title="Cérémonie religieuse"
         body1="16h - Abbatiale Saint-Austremoine d'Issoire"
-        body2="63500 Pl. Saint-Paul, 63500 Issoire"
+        body2="Pl. Saint-Paul, 63500 Issoire"
       />
       <Step
         side="left"
         title="Cortège"
         body1="17h - Départ de l'abbatiale"
-        body2="63500 Pl. Saint-Paul, 63500 Issoire"
+        body2="Pl. Saint-Paul, 63500 Issoire"
       />
       <Step
         side="right"
@@ -29,14 +29,14 @@ export const InfosPage = () => {
         body1="17h30 - Le clos du fort"
         body2="2 Rue du Château, 63340 Collanges"
       />
-      {/* <Step
-        side="left"
-        title="Vin d'honneur"
-        body1="14h30 - Le clos du fort"
-        body2="2 Rue du Château, 63340 Collanges"
-      /> */}
       <Step
         side="left"
+        title="Vin d'honneur"
+        body1="18h - Le clos du fort"
+        body2="2 Rue du Château, 63340 Collanges"
+      />
+      <Step
+        side="right"
         title="Soirée"
         body1="20h - Le clos du fort"
         body2="2 Rue du Château, 63340 Collanges"

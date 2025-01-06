@@ -61,9 +61,9 @@ export const HostingPage = () => {
           <div className="textInsideContainer">
             <h2>Tente et caravane</h2>
             <span>
-              Un terrain est prévu pour dormir en tente ou en caravanne. Il faut
-              cependant ramener son matériel.
+              Un terrain est prévu pour dormir en tente ou en caravane.
             </span>
+            <span>Pensez à ramener votre matériel de camping !</span>
           </div>
         </div>
       </div>
