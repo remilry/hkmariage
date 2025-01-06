@@ -14,7 +14,7 @@ export const PhotosPage = () => {
         <img
           className={styles.webshootsImage}
           src={WebshootsApp}
-          alt="Webshoots App"
+          alt="Wedshoots App"
         />
         <div className={styles.textContainer}>
           <p>
