@@ -29,7 +29,7 @@ export const Header = () => {
       <section id="header">
         <p id="hk-text">Hélène & Kévin</p>
         <div id="links">
-          <Link to="/">Acceuil</Link>
+          <Link to="/">Accueil</Link>
           <Link to="/infos">Infos</Link>
           <Link to="/logements">Logements</Link>
           <Link to="/photos">Photos</Link>
@@ -66,7 +66,7 @@ const Slider = ({
       variants={variants}
     >
       <Link to="/" onClick={onPressItem}>
-        Acceuil
+        Accueil
       </Link>
       <Link to="/infos" onClick={onPressItem}>
         Infos
