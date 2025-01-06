@@ -7,7 +7,7 @@ export const ContactsPage = () => {
   return (
     <div className={styles.container}>
       <ContactCard
-        name="Hélène"
+        name="Hélène Leroy"
         email="leroy445@gmail.com"
         phone="06 51 56 97 10"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
@@ -15,8 +15,8 @@ export const ContactsPage = () => {
       />
       <Divider />
       <ContactCard
-        name="Kévin"
-        email="kevin@gmail.com"
+        name="Kévin Bourbiaux"
+        email="kevin.bourbiaux@gmail.com"
         phone="06 89 03 55 59"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
         photo={BulleImg}
@@ -46,7 +46,7 @@ const ContactCard = ({
       <span className={styles.name}>{name}</span>
       <div>
         <div className={styles.row}>
-          <div>
+          <div className={styles.icon}>
             <House color={"RGB(50, 50, 50"} size={32} />
           </div>
           <p className={styles.field}>Adresse : {adress}</p>
