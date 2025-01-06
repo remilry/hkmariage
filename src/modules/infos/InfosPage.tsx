@@ -1,86 +1,91 @@
 import styled from "@emotion/styled";
 import styles from "./InfosPages.module.scss";
+import { useMemo } from "react";
 export const InfosPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Le planning</h1>
-      <div
-        style={{
-          flexDirection: "row",
-          display: "flex",
-          flex: 1,
-        }}
-      >
-        <div className={styles.leftColumn}>
-          <h3>Mariage civil</h3>
-          <span>10h - Marie d'Auzat-la-Combelle</span>
-          <br />
-          <span>12 Pl. du Coudert, 63570 Auzat-la-Combelle</span>
-        </div>
-        <div className={styles.middleColumn}>
-          <Round />
-          <Line />
-        </div>
-        <div className={styles.rightColumn}></div>
+      <Step
+        side="left"
+        title="Cérémonie civile"
+        body1="14h - Marie d'Auzat-la-Combelle"
+        body2="12 Pl. du Coudert, 63570 Auzat-la-Combelle"
+      />
+      <Step
+        side="right"
+        title="Cérémonie religieuse"
+        body1="16h - Abbatiale Saint-Austremoine d'Issoire"
+        body2="63500 Pl. Saint-Paul, 63500 Issoire"
+      />
+      <Step
+        side="left"
+        title="Cortège"
+        body1="17h - Départ de l'abbatiale"
+        body2="63500 Pl. Saint-Paul, 63500 Issoire"
+      />
+      <Step
+        side="right"
+        title="Photos de groupe"
+        body1="17h30 - Le clos du fort"
+        body2="2 Rue du Château, 63340 Collanges"
+      />
+      {/* <Step
+        side="left"
+        title="Vin d'honneur"
+        body1="14h30 - Le clos du fort"
+        body2="2 Rue du Château, 63340 Collanges"
+      /> */}
+      <Step
+        side="left"
+        title="Soirée"
+        body1="20h - Le clos du fort"
+        body2="2 Rue du Château, 63340 Collanges"
+        end
+      />
+    </div>
+  );
+};
+
+const Step = ({
+  side,
+  title,
+  body1,
+  body2,
+  end,
+}: {
+  side: "left" | "right";
+  title: string;
+  body1: string;
+  body2?: string;
+  end?: boolean;
+}) => {
+  const content = useMemo(
+    () => (
+      <>
+        <h3>{title}</h3>
+        <span>{body1}</span>
+        <br />
+        <span>{body2}</span>
+      </>
+    ),
+    [title, body1, body2]
+  );
+
+  return (
+    <div
+      style={{
+        flexDirection: "row",
+        display: "flex",
+        flex: 1,
+      }}
+    >
+      <div className={styles.leftColumn}>{side === "left" && content}</div>
+      <div className={styles.middleColumn}>
+        <Round />
+        <Line />
+        {end && <Round />}
       </div>
-      <div
-        style={{
-          flexDirection: "row",
-          display: "flex",
-          flex: 1,
-        }}
-      >
-        <div className={styles.leftColumn}></div>
-        <div className={styles.middleColumn}>
-          <Round />
-          <Line />
-        </div>
-        <div className={styles.rightColumn}>
-          <h3>Mariage regilieux</h3>
-          <span>11h30 - Abbatiale Saint-Austremoine d'Issoire</span>
-          <br />
-          <span>63500 Pl. Saint-Paul, 63500 Issoire</span>
-        </div>
-      </div>
-      <div
-        style={{
-          flexDirection: "row",
-          display: "flex",
-          flex: 1,
-        }}
-      >
-        <div className={styles.leftColumn}>
-          <h3>Vin d'honneur</h3>
-          <span>14h30 - Le clos du fort</span>
-          <br />
-          <span>2 Rue du Château, 63340 Collanges</span>
-        </div>
-        <div className={styles.middleColumn}>
-          <Round />
-          <Line />
-        </div>
-        <div className={styles.rightColumn}></div>
-      </div>
-      <div
-        style={{
-          flexDirection: "row",
-          display: "flex",
-          flex: 1,
-        }}
-      >
-        <div className={styles.leftColumn}></div>
-        <div className={styles.middleColumn}>
-          <Round />
-          <Line />
-          <Round />
-        </div>
-        <div className={styles.rightColumn}>
-          <h3>Soirée</h3>
-          <span>19h - Le clos du fort</span>
-          <br />
-          <span>2 Rue du Château, 63340 Collanges</span>
-        </div>
-      </div>
+      <div className={styles.rightColumn}>{side === "right" && content}</div>
     </div>
   );
 };
