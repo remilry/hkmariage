@@ -6,6 +6,7 @@ import { HostingPage } from "./modules/hosting/HostingPage";
 import { Layout } from "./Layout";
 import { PhotosPage } from "./modules/photos/PhotosPage";
 import { InfosPage } from "./modules/infos/InfosPage";
+import { ContactsPage } from "./modules/contacts/ContactsPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="infos" element={<InfosPage />} />
         <Route path="logements" element={<HostingPage />} />
         <Route path="photos" element={<PhotosPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
       </Route>
     </Routes>
   );
