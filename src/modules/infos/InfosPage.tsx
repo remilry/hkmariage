@@ -20,25 +20,25 @@ export const InfosPage = () => {
       <Step
         side="left"
         title="Cortège"
-        body1="17h - Départ de l'abbatiale"
+        body1="17h - Départ de l'Abbatiale"
         body2="Pl. Saint-Paul, 63500 Issoire"
       />
       <Step
         side="right"
-        title="Photos de groupe"
-        body1="17h30 - Le clos du fort"
+        title="Photos de groupes"
+        body1="17h30 - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
       />
       <Step
         side="left"
         title="Vin d'honneur"
-        body1="18h - Le clos du fort"
+        body1="18h - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
       />
       <Step
         side="right"
         title="Soirée"
-        body1="20h - Le clos du fort"
+        body1="20h - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
         end
       />

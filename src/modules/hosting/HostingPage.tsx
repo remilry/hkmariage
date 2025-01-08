@@ -36,7 +36,7 @@ export const HostingPage = () => {
               <li>Nombre de chambres : 4</li>
               <li>Nombre de personnes par chambre : 4 à 6</li>
               <li>{"Prix : 30€ / personne (vendredi & samedi)"}</li>
-              <li>Matelas en plus gratuit</li>
+              <li>{"Possibilité de rajouter un matelas (non fournis)"}</li>
             </ul>
           </div>
         </div>
