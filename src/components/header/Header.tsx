@@ -4,6 +4,7 @@ import { BurgerButton } from "../burger-button/BurgerButton";
 import { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
+import hkLogo from "../../assets/logoHK.webp";
 
 export const Header = () => {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
@@ -27,7 +28,7 @@ export const Header = () => {
   return (
     <>
       <section id="header">
-        <p id="hk-text">Hélène & Kévin</p>
+        <img id="hk-logo" src={hkLogo} alt="hk-logo" />
         <div id="links">
           <Link to="/">Accueil</Link>
           <Link to="/infos">Infos</Link>
