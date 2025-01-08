@@ -77,6 +77,7 @@ export const HostingPage = () => {
               <li>St Gervazy</li>
               <li>St Germain Lembron</li>
               <li>Issoire</li>
+              <li>Le Breuil-sur-Couze</li>
             </ul>
           </div>
         </div>
