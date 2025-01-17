@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import styles from "./InfosPages.module.scss";
 import { useMemo } from "react";
+import { InfoLogo } from "./InfoLogo";
 export const InfosPage = () => {
   return (
     <div className={styles.container}>
@@ -10,30 +11,35 @@ export const InfosPage = () => {
         title="Cérémonie civile"
         body1="14h - Marie d'Auzat-la-Combelle"
         body2="12 Pl. du Coudert, 63570 Auzat-la-Combelle"
+        logo="cityHall"
       />
       <Step
         side="right"
         title="Cérémonie religieuse"
         body1="16h - Abbatiale Saint-Austremoine d'Issoire"
         body2="Pl. Saint-Paul, 63500 Issoire"
+        logo="church"
       />
       <Step
         side="left"
         title="Cortège"
         body1="17h - Départ de l'Abbatiale"
         body2="Pl. Saint-Paul, 63500 Issoire"
+        logo="cortege"
       />
       <Step
         side="right"
         title="Photos de groupes"
         body1="17h30 - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
+        logo="photo"
       />
       <Step
         side="left"
         title="Vin d'honneur"
         body1="18h - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
+        logo="reception"
       />
       <Step
         side="right"
@@ -41,6 +47,7 @@ export const InfosPage = () => {
         body1="20h - Le Clos du Fort"
         body2="2 Rue du Château, 63340 Collanges"
         end
+        logo="party"
       />
     </div>
   );
@@ -52,16 +59,19 @@ const Step = ({
   body1,
   body2,
   end,
+  logo,
 }: {
   side: "left" | "right";
   title: string;
   body1: string;
   body2?: string;
   end?: boolean;
+  logo: InfoLogo;
 }) => {
   const content = useMemo(
     () => (
       <>
+        <InfoLogo logo={logo} />
         <h3>{title}</h3>
         <span>{body1}</span>
         <br />
