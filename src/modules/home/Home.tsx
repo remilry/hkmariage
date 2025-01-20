@@ -25,7 +25,13 @@ const OverlayContent = () => {
     <div className={styles.overlayContent}>
       <span className={styles.title}>Hélène & Kévin</span>
       <Counter2 />
-      <button className={styles.rsvp}>RSVP</button>
+      <a
+        className={styles.rsvp}
+        href="https://docs.google.com/forms/d/e/1FAIpQLScikf7RMM8mpalBohEjb8-4VQzhWbHWLFB_kXwVU-40DyEmzA/viewform"
+        target="_blank"
+      >
+        RSVP
+      </a>
     </div>
   );
 };

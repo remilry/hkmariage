@@ -53,19 +53,15 @@
 }
 
 .rsvp {
-    // color: var(--color-black);
-    // background-color: var(--color-white);
     border-width: 1px;
-    // border-color: var(--color-black);
     border-radius: 8px;
-    padding: 16px 40px;
-    font-family: "Fraunces";
-
+    padding: 16px 50px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
    
     color: var(--color-white);
     background-color: var(--color-green);
     border-color: var(--color-green);
-    
 }
 
 .mobileOverlay {
