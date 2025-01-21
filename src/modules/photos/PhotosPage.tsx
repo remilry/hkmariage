@@ -1,6 +1,6 @@
 import styles from "./PhotoPage.module.scss";
-import appleStoreDownloadImage from "../../assets/appleStoreDownload.webp";
-import googlePlayDownloadImage from "../../assets/googlePlayDownload.webp";
+import appleStoreDownloadImage from "../../assets/downloadAppStore.webp";
+import googlePlayDownloadImage from "../../assets/downloadPlayStore.webp";
 import QRCodeImage from "../../assets/QRCode.webp";
 import WebshootsApp from "../../assets/webshootsApp.webp";
 
@@ -42,7 +42,14 @@ export const PhotosPage = () => {
               />
             </a>
           </div>
-          <p>Ouvrez Wedshoots, ajoutez votre prénom et scannez ce QR Code.</p>
+          <p className={styles.webText}>
+            Ouvrez Wedshoots, ajoutez votre prénom et scannez ce QR Code.
+          </p>
+          <p className={styles.mobileText}>
+            Ouvrez Wedshoots, ajoutez votre prénom et insérez le code
+            <br />
+            <b>FR4b02574</b>
+          </p>
           <div className={styles.codeContainer}>
             <img className={styles.QRCode} src={QRCodeImage} alt="QR Code" />
             <p>

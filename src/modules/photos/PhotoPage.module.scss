@@ -1,3 +1,5 @@
+@use '../../shared/styles/media.scss';
+
 .container {
     padding: 48px 0;
     padding-inline : 14vw;
@@ -10,6 +12,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    
+    @include media.small {
+        font-size: 2.8rem;
+    }
 }
 
 .contentContainer {
@@ -19,38 +25,86 @@
     flex-direction: row;
     gap: 48px;
 
-    @media (max-width: 767px) {
+    @include media.small {
         width: 100%;
     }
 
 }
 
+.textContainer {
+
+    @include media.small {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+       p {
+        text-align: center;
+    }
+    }
+
+   
+}
 
 
 .downloadButtonsContainer {
     display: flex;
     gap: 24px;
+
+    @include media.small {
+        flex-direction: column;
+    }
 }
 
 .downloadButton {
     height: 70px;
+
+    @include media.small {
+        height: auto;
+        width: 100%;
+    }
 }
 
 .codeContainer {
     display: flex;
     flex-direction: row;
     gap: 24px;
+
+    @include media.small {
+        display: none
+     }
 }
 
 .QRCode {
     width: 200px;
     height: 200px;
+
 }
 
 .webshootsImage {
     width: 300px;
 
     @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.mobileText {
+    display: none;
+
+    @include media.small {
+        display: block;
+    }
+
+    b {
+        font-size: 2rem;
+    }
+}
+
+.webText {
+    display: block;
+
+    @include media.small {
         display: none;
     }
 }
