@@ -1,7 +1,8 @@
 import styles from "./ContactsPage.module.scss";
-import BulleImg from "../../assets/bulle.webp";
 import { House, Mail, Phone } from "lucide-react";
 import styled from "@emotion/styled";
+import profilHeleneImg from "../../assets/profilHelene.webp";
+import profilKevingImg from "../../assets/profilKevin.webp";
 
 export const ContactsPage = () => {
   return (
@@ -11,7 +12,7 @@ export const ContactsPage = () => {
         email="leroy445@gmail.com"
         phone="06 51 56 97 10"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
-        photo={BulleImg}
+        photo={profilHeleneImg}
       />
       <Divider />
       <ContactCard
@@ -19,7 +20,7 @@ export const ContactsPage = () => {
         email="kevin.bourbiaux@gmail.com"
         phone="06 89 03 55 59"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
-        photo={BulleImg}
+        photo={profilKevingImg}
       />
     </div>
   );
