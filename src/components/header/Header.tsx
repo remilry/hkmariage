@@ -36,6 +36,13 @@ export const Header = () => {
           <Link to="/photos">Photos</Link>
           <Link to="/contacts">Contacts</Link>
         </div>
+        <a
+          id="rsvp"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScikf7RMM8mpalBohEjb8-4VQzhWbHWLFB_kXwVU-40DyEmzA/viewform"
+          target="_blank"
+        >
+          RSVP
+        </a>
         <div id="burger">
           <BurgerButton
             isOpen={isSliderOpen}

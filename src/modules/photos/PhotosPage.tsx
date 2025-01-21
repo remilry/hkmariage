@@ -8,7 +8,7 @@ export const PhotosPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        {"Retrouvez les photos du mariage et partagez\u00A0les\u00A0votres !"}
+        {"Retrouvez les photos du mariage et partagez\u00A0les\u00A0vôtres !"}
       </h1>
       <div className={styles.contentContainer}>
         <img
