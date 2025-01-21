@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @include media.small {
+        padding-inline: 10vw;
+    }
 }
 
 .title {
