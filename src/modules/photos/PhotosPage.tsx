@@ -2,7 +2,7 @@ import styles from "./PhotoPage.module.scss";
 import appleStoreDownloadImage from "../../assets/downloadAppStore.webp";
 import googlePlayDownloadImage from "../../assets/downloadPlayStore.webp";
 import QRCodeImage from "../../assets/QRCode.webp";
-import WebshootsApp from "../../assets/webshootsApp.webp";
+import wedshootAppImg from "../../assets/wedshootApp.webp";
 
 export const PhotosPage = () => {
   return (
@@ -13,7 +13,7 @@ export const PhotosPage = () => {
       <div className={styles.contentContainer}>
         <img
           className={styles.webshootsImage}
-          src={WebshootsApp}
+          src={wedshootAppImg}
           alt="Wedshoots App"
         />
         <div className={styles.textContainer}>

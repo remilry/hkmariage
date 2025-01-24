@@ -87,6 +87,7 @@
 
 .webshootsImage {
     width: 300px;
+    border-radius: 16px;
 
     @media (max-width: 767px) {
         display: none;
