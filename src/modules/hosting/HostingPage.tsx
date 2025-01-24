@@ -33,9 +33,9 @@ export const HostingPage = () => {
           <div className="textInsideContainer">
             <h2>Les chambres</h2>
             <ul>
-              <li>Nombre de chambres : 4</li>
+              <li>Nombre de chambres : 6</li>
               <li>Nombre de personnes par chambre : 4 à 6</li>
-              <li>{"Prix : 30€ / personne (vendredi & samedi)"}</li>
+              <li>{"Prix : 35€ / personne (vendredi & samedi)"}</li>
               <li>{"Possibilité de rajouter un matelas (non fournis)"}</li>
             </ul>
           </div>

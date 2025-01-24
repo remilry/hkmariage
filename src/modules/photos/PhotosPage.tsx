@@ -48,14 +48,14 @@ export const PhotosPage = () => {
           <p className={styles.mobileText}>
             Ouvrez Wedshoots, ajoutez votre prénom et insérez le code
             <br />
-            <b>FR4b02574</b>
+            <b>FR4b02f574</b>
           </p>
           <div className={styles.codeContainer}>
             <img className={styles.QRCode} src={QRCodeImage} alt="QR Code" />
             <p>
               Vous pouvez aussi l'insérer manuellement.
               <br />
-              <b>FR4b02574</b>
+              <b>FR4b02f574</b>
             </p>
           </div>
           <p>

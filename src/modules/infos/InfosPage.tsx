@@ -5,7 +5,7 @@ import { InfoLogo } from "./InfoLogo";
 export const InfosPage = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Le planning</h1>
+      <h1 className={styles.title}>Le programme</h1>
       <Step
         side="left"
         title="Cérémonie civile"
@@ -78,7 +78,7 @@ const Step = ({
         <span>{body2}</span>
       </>
     ),
-    [title, body1, body2]
+    [title, body1, body2, logo]
   );
 
   return (
