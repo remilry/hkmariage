@@ -1,7 +1,6 @@
 import styles from "./Home.module.scss";
 import { Counter2 } from "../../components/counter/Counter2";
 import homeBanner from "../../assets/homeBackground.webp";
-import { InfosPage } from "../infos/InfosPage";
 
 export const Home = () => {
   return (
@@ -15,7 +14,6 @@ export const Home = () => {
       <div className={styles.mobileOverlay}>
         <OverlayContent />
       </div>
-      <InfosPage />
     </div>
   );
 };

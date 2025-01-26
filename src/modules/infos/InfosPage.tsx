@@ -5,7 +5,8 @@ import { InfoLogo } from "./InfoLogo";
 export const InfosPage = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Le programme</h1>
+      <h1 className={styles.title}>Le programme du mariage</h1>
+      <h2 className={styles.subtitle}>26 juillet 2025</h2>
       <Step
         side="left"
         title="Cérémonie civile"
@@ -16,7 +17,7 @@ export const InfosPage = () => {
       <Step
         side="right"
         title="Cérémonie religieuse"
-        body1="16h - Abbatiale Saint-Austremoine d'Issoire"
+        body1="16h - Abbatiale Saint-Austremoine"
         body2="Pl. Saint-Paul, 63500 Issoire"
         logo="church"
       />
