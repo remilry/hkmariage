@@ -50,4 +50,36 @@
             padding: 0 16px;
          }
     }
+
+    .urne {
+        padding: 48px 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-black);
+        gap: 16px;
+
+        @include media.medium {
+            padding: 48px 4rem;
+        }
+
+        @include media.small {
+            padding: 48px 2rem;
+            text-align: center;
+        }
+
+        .title {
+            align-self: center;
+            margin-block-end: 0;
+            text-align: center;
+        }
+    
+        .subtitle {
+            align-self: center;
+            margin-block-start:0 ;
+            font-family: Fraunces;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+    }
 }

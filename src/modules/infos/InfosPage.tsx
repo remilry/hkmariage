@@ -50,6 +50,17 @@ export const InfosPage = () => {
         end
         logo="party"
       />
+      <div className={styles.urne}>
+        <h1 className={styles.title}>
+          "Le plus beau voyage c'est celui que nous ferons grâce à vous"
+        </h1>
+        <h2 className={styles.subtitle}>
+          Si vous souhaitez participer à notre mariage, une urne sera disponible
+          pour concrétiser notre projet de lune de miel.
+          <br />
+          Merci beaucoup!
+        </h2>
+      </div>
     </div>
   );
 };
