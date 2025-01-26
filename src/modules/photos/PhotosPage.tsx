@@ -18,7 +18,7 @@ export const PhotosPage = () => {
         />
         <div className={styles.textContainer}>
           <p>
-            Téléchargez l'application <b>Webshoots</b>
+            Téléchargez l'application <b>Wedshoots</b>
           </p>
           <div className={styles.downloadButtonsContainer}>
             <a
