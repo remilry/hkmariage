@@ -10,7 +10,7 @@ export const ContactsPage = () => {
       <ContactCard
         name="Hélène Leroy"
         email="leroy445@gmail.com"
-        phone="06 51 56 97 10"
+        phone="06&nbsp51&nbsp56&nbsp97&nbsp10"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
         photo={profilHeleneImg}
       />
@@ -18,7 +18,7 @@ export const ContactsPage = () => {
       <ContactCard
         name="Kévin Bourbiaux"
         email="kevin.bourbiaux@gmail.com"
-        phone="06 89 03 55 59"
+        phone="06&nbsp89&nbsp03&nbsp55&nbsp59"
         adress="1 avenue du Pin 63570 Auzat la Combelle"
         photo={profilKevingImg}
       />
@@ -54,7 +54,12 @@ const ContactCard = ({
         </div>
         <div className={styles.row}>
           <Phone color={"RGB(50, 50, 50"} size={32} />
-          <p className={styles.field}>N° de téléphone : {phone}</p>
+          <p
+            className={styles.field}
+            dangerouslySetInnerHTML={{ __html: `N° de téléphone : ${phone}` }}
+          >
+            {/* N° de téléphone : {phone} */}
+          </p>
         </div>
         <div className={styles.row}>
           <Mail color={"RGB(50, 50, 50"} size={32} />
