@@ -28,7 +28,9 @@ export const Header = () => {
   return (
     <>
       <section id="header">
-        <img id="hk-logo" src={hkLogo} alt="hk-logo" />
+        <Link to="/" id="hk-logo">
+          <img id="hk-logo" src={hkLogo} alt="hk-logo" />
+        </Link>
         <div id="links">
           <Link to="/">Accueil</Link>
           <Link to="/infos">Infos</Link>
